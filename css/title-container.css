@@ -1,0 +1,16 @@
+
+/* this page contains style about .title-container */
+
+.title-container {
+    width: 50%;
+    height: 7%;
+    background-color: rgb(4, 236, 174);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-content {
+    color: white;
+    font-size: 20px;
+}

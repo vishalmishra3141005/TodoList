@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/add-task-modal.css">
+    <link rel="stylesheet" href="css/title-container.css">
+    <link rel="stylesheet" href="css/list-container.css">
+    <link rel="stylesheet" href="css/status-container.css">
+    <link rel="stylesheet" href="css/current-list-container.css">
+    <link rel="stylesheet" href="css/add-task-container.css">
+    <link rel="stylesheet" href="css/count.css">
+    <link rel="stylesheet" href="css/dislay-complete-task.css">
+    <link rel="stylesheet" href="css/display-incomplete-task.css">
+    <title>TodoList</title>
+
+</head>
+<body>
+    <!-- main container -->
+    <div class="main-container">
+        <!-- title container -->
+        <div class="title-container">
+            <div class="title-content">
+                TodoList
+            </div>
+        </div>
+
+        <!-- modal container -->
+        <div id="modal-container" class="modal-container">
+            <div class="modal-title-container">
+                <input type="text" placeholder="Enter title.." id="modal-title">
+            </div>
+            <div class="modal-content-container">
+                <textarea id="modal-content" placeholder="Enter content.."></textarea>
+            </div>
+            <div class="button-container">
+                <button class="common-button-style" id="save-button">Save</button>
+                <button class="common-button-style" id="cancel-button">Cancel</button>
+            </div>
+        </div>
+
+        <!-- display for completed task -->
+        <div id="display-complete" class="display-complete-container">
+            <div id="complete-task-id" style="display: none;"></div>
+            <div class="complete-title-container">
+                <input type="text"  id="display-complete-title" readonly>
+            </div>
+            <div class="complete-content-container">
+                <textarea id="display-complete-content" readonly></textarea>
+            </div>
+            <div class="complete-button-container">
+                <button class="display-complete-button" id="delete-complete">Delete</button>
+                <button class="display-complete-button" id="cancel-complete">Cancel</button>
+            </div>
+        </div>
+
+        <!-- display for incompleted task -->
+        <div id="display-incomplete" class="display-incomplete-container">
+            <div id="incomplete-task-id" style="display: none;"></div>
+            <div class="incomplete-title-container">
+                <input type="text"  id="display-incomplete-title" readonly>
+            </div>
+            <div class="incomplete-content-container">
+                <textarea id="display-incomplete-content" readonly></textarea>
+            </div>
+            <div class="incomplete-button-container">
+                <button class="display-incomplete-button" id="markc-incomplete">Mark as Complete</button>
+                <button class="display-incomplete-button" id="delete-incomplete">Delete</button>
+                <button class="display-incomplete-button" id="cancel-incomplete">Cancel</button>
+            </div>
+        </div>
+
+        <!-- todolist container -->
+        <div class="todolist-container">
+            <div class="list-container">
+
+                <!-- this section is for status container -->
+                <div class="status-container">
+                    <div id="current-status-container" class="current-status-container common-status-container">
+                        <div id="current-status" class="current-status">Incomplete</div>
+                    </div>
+                    <div class="dropdown-icon-container">
+                        <img class="dropdown-icon" src="assets/caret-down-solid.svg" alt="dropdown">
+                    </div>
+                    <div class="dropdown-option-container">
+                        <div id="incomplete-status-container" class="incomplete-status-container common-status-container">
+                            <div id="incomplete-status" class="incomplete-status-content">Incomplete</div>
+                        </div>
+                        <div id="complete-status-container" class="complete-status-container common-status-container">
+                            <div id="complete-status" class="complete-status-content">Complete</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- this section is for current list -->
+                <div class="current-list-container">
+                    <div id="empty-container" class="empty-container">
+                        <div class="empty-content">Empty</div>
+                    </div>
+                    <div id="content-template-container" class="content-template-container">
+                        <div class="content">
+                            <div class="delete-icon-container" id="id">
+                                <img src="assets/trash-solid.svg" alt="Detete" class="delete-icon">
+                            </div>
+                            <div class="todo-title-container">
+                                <div class="title-content">This is the title of list 1</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- this section is for total add task button -->
+                <div id="add-task-container" class="add-task-container">
+                    <div class="add-task-content">
+                        Add Task
+                    </div>
+                </div>
+
+                <!-- this section is for total count -->
+                <div class="total-count-container">
+                    <div class="total-count">
+                        COUNT:
+                        <span id="count">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/globalvariables.js"></script>
+    <script src="js/displaylist.js"></script>
+    <script src="js/taskhandlers.js"></script>
+    <script src="js/popuphandler.js"></script>
+    <script src="js/count.js"></script>
+    <script src="js/statuscontroller.js"></script>
+    <script src="js/addtask.js"></script>
+    <script src="js/modalcontroller.js"></script>
+    <script src="js/popupbutton.js"></script>
+</body>
+</html>

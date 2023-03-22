@@ -1,0 +1,20 @@
+
+
+.todolist-container {
+    width: 50%;
+    height: 80%;
+    background-color: rgb(75, 167, 92);
+    display: flex;
+}
+
+.list-container {
+    height: 100%;
+    width: 100%;
+    background-color: pink;
+}
+
+/* .list-content-container {
+    height: 100%;
+    width: 55%;
+    background-color: aqua;
+} */

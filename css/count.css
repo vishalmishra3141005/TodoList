@@ -1,0 +1,10 @@
+.total-count-container {
+    height: 10%;
+    width: 100%;
+    background-color: rgb(176, 176, 49);
+    font-family: sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,57 @@
+
+
+.display-incomplete-container {
+    height: 70%;
+    width: 50%;
+    background-color: rgb(228, 132, 132);
+    position: absolute;
+    top: auto;
+    left: auto;
+    z-index: 1;
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid black;
+}
+
+.incomplete-title-container {
+    height: 10%;
+    width: 70%;
+    background-color: pink;
+}
+
+#display-incomplete-title {
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.incomplete-content-container {
+    height: 50%;
+    width: 70%;
+    background-color: pink;
+}
+
+#display-incomplete-content {
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.incomplete-button-container {
+    width: 70%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.display-incomplete-button {
+    margin-left: 10px;
+    background-color: cyan;
+    height: 50%;
+    width: 40%;
+}
